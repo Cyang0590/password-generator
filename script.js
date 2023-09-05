@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Created the variable for the passwords
 var uppCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 var LowCase = 'abcdefghijklmnopqrstuvwxyz'
 var NumberChart = '0123456789'
@@ -12,14 +13,15 @@ function generatePassword() {
 
 
 var Randomlist = ""
-//   prompt for passsword criteria
+//  prompt for passsword criteria
 //  prompt for the length of the password 8~128
-//  lowercase, uppercase, number, special Character
- var string_passlength = prompt ("Please choose the length of of your password (8 ~ 128)");
+//  give the option for selecting lowercase, uppercase, number, or special Character
+ var string_passlength = prompt ("Please choose the length of of your password (8 ~ 128)!");
 
 if (string_passlength < 8 || string_passlength > 128) {
   alert ("Invalid input, please try again!")
-  return generatePassword()
+  return "";
+  // generatePassword()
 }
 
 if (confirm("Would you like to include Uppercase in your password?")) {
@@ -40,11 +42,12 @@ if (confirm("Would you like to include Numbers in your password?")) {
 
 if (Randomlist === "") {
   alert ("Invalid input, please try again!")
-  return generatePassword()
+  return "";
+  // generatePassword()
 }
 
 //  generate password base on input
-    
+
         retVal = "";
     for (var i = 0; i < string_passlength; ++i) {
         retVal += Randomlist.charAt(Math.floor(Math.random() * Randomlist.length));
