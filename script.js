@@ -21,7 +21,7 @@ var Randomlist = ""
 if (string_passlength < 8 || string_passlength > 128) {
   alert ("Invalid input, please try again!")
   return "";
-  // generatePassword()
+ 
 }
 
 if (confirm("Would you like to include Uppercase in your password?")) {
@@ -43,7 +43,7 @@ if (confirm("Would you like to include Numbers in your password?")) {
 if (Randomlist === "") {
   alert ("Invalid input, please try again!")
   return "";
-  // generatePassword()
+
 }
 
 //  generate password base on input
