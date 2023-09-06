@@ -18,6 +18,10 @@ User are able to create password base on the characters or numbers they desire. 
 
 Jacob Carver
 
+## Deployed Page
+
+https://cyang0590.github.io/password-generator/
+
 ## License
 
 N/A
