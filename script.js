@@ -46,14 +46,18 @@ if (Randomlist === "") {
 
 }
 
+
 //  generate password base on input
 
-        retVal = "";
+        PassW = "";
     for (var i = 0; i < string_passlength; ++i) {
-        retVal += Randomlist.charAt(Math.floor(Math.random() * Randomlist.length));
+        PassW += Randomlist.charAt(Math.floor(Math.random() * Randomlist.length));
     }
-    return retVal;
-}
+      return PassW;
+  }
+
+    
+
 
 // Write password to the #password input
 function writePassword() {
